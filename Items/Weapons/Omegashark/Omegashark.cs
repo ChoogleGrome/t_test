@@ -4,7 +4,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Messorem.Items.Weapons
+namespace Messorem.Items.Weapons.Omegashark
 {
 	public class Omegashark : ModItem
 	{
