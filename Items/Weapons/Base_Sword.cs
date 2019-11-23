@@ -1,7 +1,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TestMod.Items
+namespace Messorem.Items
 {
 	public class Base_Sword : ModItem
 	{

@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TestMod.Items {
+namespace Messorem.Items {
     public class Base_Bow : ModItem {
         public override void SetStaticDefaults() {
             Tooltip.SetDefault("Base Bow Test");
