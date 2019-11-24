@@ -2,7 +2,11 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
+<<<<<<< HEAD
 namespace t_test.Items.Weapons {
+=======
+namespace Messorem.Items.Weapons {
+>>>>>>> 94b969b8553ea2ee23c7b3125f02f408f6f2357c
     public class Base_Bow : ModItem {
         public override void SetStaticDefaults() {
             DisplayName.SetDefault("Base Bow Test");

@@ -1,7 +1,11 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
+<<<<<<< HEAD:Items/Weapons/Base_Sword/Base_Sword.cs
 namespace t_test.Items.Base_Sword
+=======
+namespace Messorem.Items.Base_Sword
+>>>>>>> 94b969b8553ea2ee23c7b3125f02f408f6f2357c:Items/Weapons/Base_Sword/Base_Sword.cs
 {
 	public class Base_Sword : ModItem
 	{
