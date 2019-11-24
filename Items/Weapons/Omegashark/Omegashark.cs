@@ -4,19 +4,17 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-<<<<<<< HEAD:Items/Weapons/Omegashark/Omegashark.cs
 namespace t_test.Items.Weapons.Omegashark
-=======
-namespace Messorem.Items.Weapons.Omegashark
->>>>>>> 94b969b8553ea2ee23c7b3125f02f408f6f2357c:Items/Weapons/Omegashark/Omegashark.cs
 {
 	public class Omegashark : ModItem
 	{
-		public override void SetStaticDefaults() {
+		public override void SetStaticDefaults() 
+		{
 			Tooltip.SetDefault("");
 		}
 
-		public override void SetDefaults() {
+		public override void SetDefaults() 
+		{
 			item.damage = 120;
 			item.ranged = true;
 			item.width = 40;
@@ -34,9 +32,10 @@ namespace Messorem.Items.Weapons.Omegashark
 			item.useAmmo = AmmoID.Bullet;
 		}
 
-		public override void AddRecipes() {
+		public override void AddRecipes() 
+		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemType<NoriBar>(), 20)
+			recipe.AddIngredient(ItemType<NoriBar>(), 20);
 			recipe.AddIngredient(ItemID.Megashark);
 			recipe.AddIngredient(ItemID.SDMG);
 			recipe.SetResult(this);

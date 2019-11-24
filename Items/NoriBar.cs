@@ -20,7 +20,7 @@ namespace t_test.Items
 		public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.LunarBar, 1);
-			recipe.AddIngredient(ItemType<FlareEssence>(), 2)
+			recipe.AddIngredient(mod.GetItem("FlareEssence"), 2);
 			recipe.SetResult(this, 1);
 			recipe.AddRecipe();
 
