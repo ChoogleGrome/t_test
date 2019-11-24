@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Messorem.Dusts
+namespace t_test.Dusts
 {
 	public class Sparkle : ModDust
 	{

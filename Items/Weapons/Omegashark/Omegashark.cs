@@ -4,7 +4,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Messorem.Items.Weapons
+namespace t_test.Items.Weapons.Omegashark
 {
 	public class Omegashark : ModItem
 	{
@@ -24,19 +24,15 @@ namespace Messorem.Items.Weapons
 			item.knockBack = 4;
 			item.value = 10000;
 			item.rare = 10;	
-			item.UseSound = SoundID.Item11;
 			item.autoReuse = true;
 			item.shoot = 10;
-			item.shootSpeed = 30f;
+			item.shootSpeed = 16f;
 			item.useAmmo = AmmoID.Bullet;
 		}
 
 		public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.FragmentVortex, 20);
-			recipe.AddIngredient(ItemID.FragmentSolar, 20);
-			recipe.AddIngredient(ItemID.FragmentNebula, 20);
-			recipe.AddIngredient(ItemID.FragmentStardust, 20);
+			recipe.AddIngredient(ItemType<NoriBar>(), 20)
 			recipe.AddIngredient(ItemID.Megashark);
 			recipe.AddIngredient(ItemID.SDMG);
 			recipe.SetResult(this);
@@ -48,9 +44,15 @@ namespace Messorem.Items.Weapons
 			return new Vector2(-20, 0);
 		}
 
+		// How can I make the shots appear out of the muzzle exactly?
+		// Also, when I do this, how do I prevent shooting through tiles?
 		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
 		{
-			type = Main.rand.Next(new int[] { type, ProjectileID.GoldenBullet, ProjectileType.RocketI });
+			Vector2 muzzleOffset = Vector2.Normalize(new Vector2(speedX, speedY)) * 25f;
+			if (Collision.CanHit(position, 0, 0, position + muzzleOffset, 0, 0))
+			{
+				position += muzzleOffset;
+			}
 			return true;
 		}
 	}
