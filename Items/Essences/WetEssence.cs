@@ -1,12 +1,12 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace t_test.Items
+namespace t_test.Items.Essences
 {
-	public class FlareEssence : ModItem
+	public class WetEssence : ModItem
 	{
 		public override void SetStaticDefaults() {
-			Tooltip.SetDefault("It's too bright");
+			Tooltip.SetDefault("It's very wet");
 		}
 
 		public override void SetDefaults() {

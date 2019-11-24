@@ -1,6 +1,7 @@
 ﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Microsoft.Xna.Framework;
 
 namespace t_test.Projectiles
 {
@@ -13,10 +14,10 @@ namespace t_test.Projectiles
 			ProjectileID.Sets.YoyosLifeTimeMultiplier[projectile.type] = -1f;
 			// YoyosMaximumRange is the maximum distance the yoyo sleep away from the player. 
 			// Vanilla values range from 130f(Wood) to 400f(Terrarian), and defaults to 200f
-			ProjectileID.Sets.YoyosMaximumRange[projectile.type] = 450f;
+			ProjectileID.Sets.YoyosMaximumRange[projectile.type] = 600f;
 			// YoyosTopSpeed is top speed of the yoyo projectile. 
 			// Vanilla values range from 9f(Wood) to 17.5f(Terrarian), and defaults to 10f
-			ProjectileID.Sets.YoyosTopSpeed[projectile.type] = 19f;
+			ProjectileID.Sets.YoyosTopSpeed[projectile.type] = 20f;
 		}
 
 		public override void SetDefaults() {
@@ -30,19 +31,33 @@ namespace t_test.Projectiles
 			projectile.melee = true;
 			projectile.scale = 1f;
 		}
-		// notes for aiStyle 99: 
-		// localAI[0] is used for timing up to YoyosLifeTimeMultiplier
-		// localAI[1] can be used freely by specific types
-		// ai[0] and ai[1] usually point towards the x and y world coordinate hover point
-		// ai[0] is -1f once YoyosLifeTimeMultiplier is reached, when the player is stoned/frozen, when the yoyo is too far away, or the player is no longer clicking the shoot button.
-		// ai[0] being negative makes the yoyo move back towards the player
-		// Any AI method can be used for dust, spawning projectiles, etc specific to your yoyo.
+
+		public override void AI() {
+			if (Main.rand.Next(100) == 0) {
+				Projectile.NewProjectile(projectile.position.X, projectile.position.Y, 0, 0, 401, 450, projectile.knockBack, Main.myPlayer);
+				projectile.friendly = true;
+			}
+		}
+
+		public override void OnHitNPC(NPC npc, int damage, float knockback, bool crit) {
+			Player owner = Main.player[projectile.owner];
+			int rand = Main.rand.Next(10);
+			if (rand < 0){
+				npc.AddBuff(69, 180);
+			}
+			else if (rand == 0){
+				owner.statLife += 15;
+				owner.HealEffect(15, true);
+			}
+		}
 
 		public override void PostAI() {
-			if (Main.rand.NextBool()) {
-				Dust dust = Dust.NewDustDirect(projectile.position, projectile.width, projectile.height, 16);
-				dust.noGravity = true;
-				dust.scale = 1.6f;
+			if (Main.rand.NextFloat() < 0.3947369f)
+			{
+				Dust dust;
+				// You need to set position depending on what you are doing. You may need to subtract width/2 and height/2 as well to center the spawn rectangle.
+				Vector2 position = Main.LocalPlayer.Center;
+				dust = Terraria.Dust.NewDustDirect(position, 0, 0, 158, 0f, 0f, 184, new Color(255,150,0), 1.184211f);
 			}
 		}
 	}

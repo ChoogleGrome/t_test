@@ -4,7 +4,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace t_test.Items.Weapons
+namespace t_test.Items.Nori_Tier.Weapons
 {
 	public class Devastator : ModItem
 	{
@@ -26,7 +26,7 @@ namespace t_test.Items.Weapons
 			item.shootSpeed = 16f;
 			item.knockBack = 2.5f;
 			item.damage = 250;
-			item.rare = 0;
+			item.rare = 10;
 
 			item.melee = true;
 			item.channel = true;
@@ -40,7 +40,8 @@ namespace t_test.Items.Weapons
 
 		public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemType<NoriBar>(), 10);
+			recipe.AddIngredient(mod.GetItem("NoriBar"), 20);
+			recipe.AddIngredient(mod.GetItem("FlareEssence"), 10);
 			recipe.AddIngredient(ItemID.Terrarian);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

@@ -1,7 +1,9 @@
+using Terraria;
+using Microsoft.Xna.Framework;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace t_test.Items
+namespace t_test.Items.Nori_Tier.Ores
 {
 	public class NoriBar : ModItem
 	{
