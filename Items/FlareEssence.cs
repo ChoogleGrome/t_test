@@ -3,10 +3,10 @@ using Terraria.ModLoader;
 
 namespace t_test.Items
 {
-	public class NoriBar : ModItem
+	public class FlareEssence : ModItem
 	{
 		public override void SetStaticDefaults() {
-			Tooltip.SetDefault("The bar of Ra");
+			Tooltip.SetDefault("It's too bright");
 		}
 
 		public override void SetDefaults() {
@@ -17,14 +17,14 @@ namespace t_test.Items
 			item.rare = 1;
 		}
 
-		public override void AddRecipes() {
+		/*public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.LunarBar, 1);
-			recipe.AddIngredient(ItemType<FlareEssence>(), 2)
+			recipe.AddIngredient(ItemID.LunarBar, 2);
+			recipe.AddIngredient()
 			recipe.SetResult(this, 1);
 			recipe.AddRecipe();
 
-			/*
+			
 			// Start a new Recipe. (Prepend with "ModRecipe " if 1st recipe in code block.)
 			recipe = new ModRecipe(mod);
 			// Add a Vanilla Ingredient. 
@@ -55,7 +55,6 @@ namespace t_test.Items
 			recipe.SetResult(this, 999); // or, for a vanilla result, recipe.SetResult(ItemID.Muramasa);
 			// Finish your recipe
 			recipe.AddRecipe();
-			*/
-		}
+		}*/
 	}
 }
