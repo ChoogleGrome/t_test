@@ -34,6 +34,7 @@ namespace t_test.Items.Nori_Tier.Tools
 		public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(mod.GetItem("NoriBar"), 10);
+			recipe.AddIngredient(mod.ItemType("FlareEssence"), 5);
 			recipe.AddTile(mod.GetTile("ForgeOfTheGods"));
 			recipe.SetResult(this);
 			recipe.AddRecipe();

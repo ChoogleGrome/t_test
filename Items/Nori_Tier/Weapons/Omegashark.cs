@@ -36,6 +36,7 @@ namespace t_test.Items.Nori_Tier.Weapons
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(mod.GetItem("NoriBar"), 20);
+			recipe.AddIngredient(mod.ItemType("FlareEssence"), 10);
 			recipe.AddIngredient(ItemID.Megashark);
 			recipe.AddIngredient(ItemID.SDMG);
 			recipe.SetResult(this);

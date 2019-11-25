@@ -8,20 +8,21 @@ using static Terraria.ModLoader.ModContent;
 
 namespace t_test.Items.Nori_Tier.Tools
 {
-	public class NoriPickaxe : ModItem
+	public class NoriHamaxe : ModItem
 	{
 		public override void SetStaticDefaults() {
-			Tooltip.SetDefault("Uses the heat of the sun");
+			Tooltip.SetDefault("Fish's most reliable tool");
 		}
 
 		public override void SetDefaults() {
-			item.damage = 30;
+			item.damage = 25;
 			item.melee = true;
 			item.width = 40;
 			item.height = 40;
-			item.useTime = 10;
-			item.useAnimation = 10;
-			item.pick = 235;
+			item.useTime = 15;
+			item.useAnimation = 15;
+			item.axe = 20;          //How much axe power the weapon has, note that the axe power displayed in-game is this value multiplied by 5
+			item.hammer = 150;      //How much hammer power the weapon has
 			item.useStyle = 1;
 			item.knockBack = 6;
 			item.value = 10000;
@@ -32,8 +33,7 @@ namespace t_test.Items.Nori_Tier.Tools
 
 		public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.GetItem("NoriBar"), 15);
-			recipe.AddIngredient(mod.ItemType("FlareEssence"), 10);
+			recipe.AddIngredient(mod.GetItem("NoriBar"), 10);
 			recipe.AddTile(mod.GetTile("ForgeOfTheGods"));
 			recipe.SetResult(this);
 			recipe.AddRecipe();
