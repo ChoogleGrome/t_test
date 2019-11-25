@@ -6,9 +6,9 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace t_test.Items.Nori_Tier.Tools
+namespace t_test.Items.TaiyoTier.Tools
 {
-	public class NoriPickaxe : ModItem
+	public class TaiyoPickaxe : ModItem
 	{
 		public override void SetStaticDefaults() {
 			Tooltip.SetDefault("Uses the heat of the sun");
@@ -32,8 +32,8 @@ namespace t_test.Items.Nori_Tier.Tools
 
 		public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.GetItem("NoriBar"), 15);
-			recipe.AddIngredient(mod.ItemType("FlareEssence"), 10);
+			recipe.AddIngredient(mod.GetItem("TaiyoBar"), 15);
+			recipe.AddIngredient(mod.ItemType("KasaiEssence"), 10);
 			recipe.AddTile(mod.GetTile("ForgeOfTheGods"));
 			recipe.SetResult(this);
 			recipe.AddRecipe();

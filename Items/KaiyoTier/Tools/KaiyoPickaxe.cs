@@ -6,23 +6,22 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace t_test.Items.Nori_Tier.Tools
+namespace t_test.Items.KaiyoTier.Tools
 {
-	public class NoriHamaxe : ModItem
+	public class KaiyoPickaxe : ModItem
 	{
 		public override void SetStaticDefaults() {
-			Tooltip.SetDefault("Pretty sure Ra used this");
+			Tooltip.SetDefault("Force of the sea");
 		}
 
 		public override void SetDefaults() {
-			item.damage = 25;
+			item.damage = 30;
 			item.melee = true;
 			item.width = 40;
 			item.height = 40;
-			item.useTime = 15;
-			item.useAnimation = 15;
-			item.axe = 20;          //How much axe power the weapon has, note that the axe power displayed in-game is this value multiplied by 5
-			item.hammer = 150;      //How much hammer power the weapon has
+			item.useTime = 10;
+			item.useAnimation = 10;
+			item.pick = 180;
 			item.useStyle = 1;
 			item.knockBack = 6;
 			item.value = 10000;
@@ -33,9 +32,10 @@ namespace t_test.Items.Nori_Tier.Tools
 
 		public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.GetItem("NoriBar"), 10);
-			recipe.AddIngredient(mod.ItemType("FlareEssence"), 5);
-			recipe.AddTile(mod.GetTile("ForgeOfTheGods"));
+			recipe.AddIngredient(mod.GetItem("KaiyoBar"), 15);
+			recipe.AddIngredient(mod.ItemType("UmiEssence"), 5);
+			recipe.AddTile(TileID.MythrilAnvil);
+			recipe.AddTile(TileID.OrichalcumAnvil);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

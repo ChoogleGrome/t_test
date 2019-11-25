@@ -3,7 +3,7 @@ using Terraria.ModLoader;
 
 namespace t_test.Items.Essences
 {
-	public class WetEssence : ModItem
+	public class UmiEssence : ModItem
 	{
 		public override void SetStaticDefaults() {
 			Tooltip.SetDefault("It's very wet");

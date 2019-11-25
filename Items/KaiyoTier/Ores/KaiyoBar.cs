@@ -1,12 +1,14 @@
+using Terraria;
+using Microsoft.Xna.Framework;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace t_test.Items.Essences
+namespace t_test.Items.KaiyoTier.Ores
 {
-	public class LightEssence : ModItem
+	public class KaiyoBar : ModItem
 	{
 		public override void SetStaticDefaults() {
-			Tooltip.SetDefault("It's too bright");
+			Tooltip.SetDefault("The bar of the sea");
 		}
 
 		public override void SetDefaults() {
@@ -17,14 +19,24 @@ namespace t_test.Items.Essences
 			item.rare = 1;
 		}
 
-		/*public override void AddRecipes() {
+		public override void AddRecipes() {
+			// recipe #1
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.LunarBar, 2);
-			recipe.AddIngredient()
+			recipe.AddIngredient(ItemID.CobaltOre, 4);
+			recipe.AddIngredient(mod.GetItem("KaiyoOre"), 4);
+			recipe.AddTile(mod.TileType("ForgeOfTheGods"));
 			recipe.SetResult(this, 1);
 			recipe.AddRecipe();
 
-			
+			// recipe #2
+			recipe = new ModRecipe(mod);
+			recipe.AddIngredient(ItemID.PalladiumOre, 4);
+			recipe.AddIngredient(mod.GetItem("KaiyoOre"), 4);
+			recipe.AddTile(mod.TileType("ForgeOfTheGods"));
+			recipe.SetResult(this, 1);
+			recipe.AddRecipe();
+
+			/*
 			// Start a new Recipe. (Prepend with "ModRecipe " if 1st recipe in code block.)
 			recipe = new ModRecipe(mod);
 			// Add a Vanilla Ingredient. 
@@ -55,6 +67,7 @@ namespace t_test.Items.Essences
 			recipe.SetResult(this, 999); // or, for a vanilla result, recipe.SetResult(ItemID.Muramasa);
 			// Finish your recipe
 			recipe.AddRecipe();
-		}*/
+			*/
+		}
 	}
 }

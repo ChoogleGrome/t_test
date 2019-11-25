@@ -4,7 +4,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace t_test.Items.Nori_Tier.Weapons
+namespace t_test.Items.TaiyoTier.Weapons
 {
 	public class Omegashark : ModItem
 	{
@@ -35,8 +35,8 @@ namespace t_test.Items.Nori_Tier.Weapons
 		public override void AddRecipes() 
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.GetItem("NoriBar"), 20);
-			recipe.AddIngredient(mod.ItemType("FlareEssence"), 10);
+			recipe.AddIngredient(mod.GetItem("TaiyoBar"), 20);
+			recipe.AddIngredient(mod.ItemType("KasaiEssence"), 10);
 			recipe.AddIngredient(ItemID.Megashark);
 			recipe.AddIngredient(ItemID.SDMG);
 			recipe.SetResult(this);

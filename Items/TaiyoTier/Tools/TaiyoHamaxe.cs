@@ -6,12 +6,12 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace t_test.Items.Nori_Tier.Tools
+namespace t_test.Items.TaiyoTier.Tools
 {
-	public class NoriHamaxe : ModItem
+	public class TaiyoHamaxe : ModItem
 	{
 		public override void SetStaticDefaults() {
-			Tooltip.SetDefault("Fish's most reliable tool");
+			Tooltip.SetDefault("Pretty sure Ra used this");
 		}
 
 		public override void SetDefaults() {
@@ -33,7 +33,8 @@ namespace t_test.Items.Nori_Tier.Tools
 
 		public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.GetItem("NoriBar"), 10);
+			recipe.AddIngredient(mod.GetItem("TaiyoBar"), 10);
+			recipe.AddIngredient(mod.ItemType("KasaiEssence"), 5);
 			recipe.AddTile(mod.GetTile("ForgeOfTheGods"));
 			recipe.SetResult(this);
 			recipe.AddRecipe();

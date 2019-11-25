@@ -3,10 +3,10 @@ using Terraria;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace t_test.Items
+namespace t_test.Items.TaiyoTier.Accessories
 {
     [AutoloadEquip(EquipType.Wings)]
-    public class NoriFlyers : ModItem
+    public class TaiyoFlyers : ModItem
     {
         public override void SetStaticDefaults()
         {
@@ -46,8 +46,8 @@ namespace t_test.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(mod.GetItem("NoriBar"), 15);
-            recipe.AddIngredient(mod.GetItem("FlareEssence"), 10);
+            recipe.AddIngredient(mod.GetItem("TaiyoBar"), 15);
+            recipe.AddIngredient(mod.GetItem("KasaiEssence"), 10);
             recipe.AddTile(mod.GetTile("ForgeOfTheGods"));
             recipe.SetResult(this);
             recipe.AddRecipe();

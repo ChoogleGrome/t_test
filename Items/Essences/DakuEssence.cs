@@ -3,10 +3,10 @@ using Terraria.ModLoader;
 
 namespace t_test.Items.Essences
 {
-	public class FlareEssence : ModItem
+	public class DakuEssence : ModItem
 	{
 		public override void SetStaticDefaults() {
-			Tooltip.SetDefault("It's too hot");
+			Tooltip.SetDefault("It's too dark");
 		}
 
 		public override void SetDefaults() {

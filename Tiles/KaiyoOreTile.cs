@@ -6,7 +6,7 @@ using static Terraria.ModLoader.ModContent;
 
 namespace t_test.Tiles
 {
-	public class AquaticOre : ModTile
+	public class KaiyoOre : ModTile
 	{
 		public override void SetDefaults()
 		{
@@ -20,11 +20,11 @@ namespace t_test.Tiles
 			Main.tileBlockLight[Type] = true;
 
 			ModTranslation name = CreateMapEntryName();
-			name.SetDefault("ExampleOre");
+			name.SetDefault("KaiyoOre");
 			AddMapEntry(new Color(152, 171, 198), name);
 
 			dustType = 84;
-			drop = mod.ItemType("AquaticOre");
+			drop = mod.ItemType("KaiyoOre");
 			soundType = 21;
 			soundStyle = 1;
 			//mineResist = 4f;

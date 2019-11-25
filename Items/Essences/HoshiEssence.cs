@@ -3,10 +3,10 @@ using Terraria.ModLoader;
 
 namespace t_test.Items.Essences
 {
-	public class SpaceEssence : ModItem
+	public class HoshiEssence : ModItem
 	{
 		public override void SetStaticDefaults() {
-			Tooltip.SetDefault("It's hard to breath");
+			Tooltip.SetDefault("Death");
 		}
 
 		public override void SetDefaults() {

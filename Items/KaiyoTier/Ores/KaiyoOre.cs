@@ -3,9 +3,9 @@ using Microsoft.Xna.Framework;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace t_test.Items
+namespace t_test.Items.KaiyoTier.Ores
 {
-	public class AquaticOre : ModItem
+	public class KaiyoOre : ModItem
 	{
 		public override void SetStaticDefaults() {
 			Tooltip.SetDefault("Yea, it's wet");
