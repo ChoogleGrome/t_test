@@ -3,10 +3,10 @@ using Terraria;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace t_test.Items.TaiyoTier.Accessories
+namespace t_test.Items.KaiyoTier.Accessories
 {
     [AutoloadEquip(EquipType.Wings)]
-    public class TaiyoFlyers : ModItem
+    public class KaiyoWings : ModItem
     {
         public override void SetStaticDefaults()
         {
@@ -39,15 +39,15 @@ namespace t_test.Items.TaiyoTier.Accessories
 
         public override void HorizontalWingSpeeds(Player player, ref float speed, ref float acceleration)
         {
-            speed = 12f;
+            speed = 9f;
             acceleration *= 2.5f;
         }
 
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(mod.GetItem("TaiyoBar"), 15);
-            recipe.AddIngredient(mod.GetItem("KasaiEssence"), 10);
+            recipe.AddIngredient(mod.GetItem("KaiyoBar"), 15);
+            recipe.AddIngredient(mod.GetItem("UmiEssence"), 10);
             recipe.AddIngredient(ItemID.SoulOfFlight, 20);
             recipe.AddTile(mod.GetTile("ForgeOfTheGods"));
             recipe.SetResult(this);
