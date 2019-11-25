@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Items",
-    "\\Items\\Nori_Tier",
-    "\\Items\\Nori_Tier\\Accessories"
+    "\\NPCs"
   ],
-  "SelectedNode": "\\Items\\Nori_Tier\\Accessories\\NoriFlyers.cs",
+  "SelectedNode": "\\NPCs\\NpcDrops.cs",
   "PreviewInSolutionExplorer": false
 }

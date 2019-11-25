@@ -28,7 +28,7 @@ namespace t_test.Tiles
 			soundType = 21;
 			soundStyle = 1;
 			//mineResist = 4f;
-			minPick = 210;
+			minPick = 160;
 		}
 	}
 }
