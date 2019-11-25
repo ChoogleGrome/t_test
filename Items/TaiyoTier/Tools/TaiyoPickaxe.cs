@@ -34,7 +34,7 @@ namespace t_test.Items.TaiyoTier.Tools
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(mod.GetItem("TaiyoBar"), 15);
 			recipe.AddIngredient(mod.ItemType("KasaiEssence"), 10);
-			recipe.AddTile(mod.GetTile("ForgeOfTheGods"));
+			recipe.AddTile(mod.TileType("ForgeOfTheGods"));
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

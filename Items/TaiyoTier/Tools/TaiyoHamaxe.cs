@@ -21,7 +21,7 @@ namespace t_test.Items.TaiyoTier.Tools
 			item.height = 40;
 			item.useTime = 15;
 			item.useAnimation = 15;
-			item.axe = 20;          //How much axe power the weapon has, note that the axe power displayed in-game is this value multiplied by 5
+			item.axe = 40	;          //How much axe power the weapon has, note that the axe power displayed in-game is this value multiplied by 5
 			item.hammer = 150;      //How much hammer power the weapon has
 			item.useStyle = 1;
 			item.knockBack = 6;
@@ -35,7 +35,7 @@ namespace t_test.Items.TaiyoTier.Tools
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(mod.GetItem("TaiyoBar"), 10);
 			recipe.AddIngredient(mod.ItemType("KasaiEssence"), 5);
-			recipe.AddTile(mod.GetTile("ForgeOfTheGods"));
+			recipe.AddTile(mod.TileType("ForgeOfTheGods"));
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

@@ -33,7 +33,7 @@ namespace t_test.Tiles
 		}
 
 		public override void KillMultiTile(int i, int j, int frameX, int frameY) {
-			Item.NewItem(i * 16, j * 16, 32, 16, ItemType<Items.Placeable.ForgeOfTheGods>());
+			Item.NewItem(i * 16, j * 16, 32, 16, mod.ItemType("ForgeOfTheGods"));
 		}
 	}
 }

@@ -24,6 +24,7 @@ namespace t_test.Items.KaiyoTier.Ores
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.CobaltOre, 4);
 			recipe.AddIngredient(mod.GetItem("KaiyoOre"), 4);
+			recipe.AddIngredient(mod.GetItem("UmiEssence"), 1);
 			recipe.AddTile(mod.TileType("ForgeOfTheGods"));
 			recipe.SetResult(this, 1);
 			recipe.AddRecipe();
@@ -32,6 +33,7 @@ namespace t_test.Items.KaiyoTier.Ores
 			recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.PalladiumOre, 4);
 			recipe.AddIngredient(mod.GetItem("KaiyoOre"), 4);
+			recipe.AddIngredient(mod.GetItem("UmiEssence"), 1);
 			recipe.AddTile(mod.TileType("ForgeOfTheGods"));
 			recipe.SetResult(this, 1);
 			recipe.AddRecipe();

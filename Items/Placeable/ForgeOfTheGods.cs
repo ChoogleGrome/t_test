@@ -30,53 +30,11 @@ namespace t_test.Items.Placeable
 			recipe.AddIngredient(ItemID.LunarCraftingStation);
 			recipe.AddIngredient(ItemID.MythrilAnvil);
 			recipe.AddIngredient(ItemID.TitaniumForge);
-			recipe.AddIngredient(mod.GetItem("FlareEssence"), 10);
-			recipe.AddIngredient(mod.GetItem("WetEssence"), 10);
-			recipe.AddIngredient(mod.GetItem("SpaceEssence"), 10);
-			recipe.AddIngredient(mod.GetItem("DarkEssence"), 10);
-			recipe.AddIngredient(mod.GetItem("LightEssence"), 10);
-			recipe.AddTile(TileID.WorkBenches);
-			recipe.SetResult(this);
-			recipe.AddRecipe();
-
-			// recipe #2
-			recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.LunarCraftingStation);
-			recipe.AddIngredient(ItemID.MythrilAnvil);
-			recipe.AddIngredient(ItemID.AdamantiteForge);
-			recipe.AddIngredient(mod.GetItem("FlareEssence"), 10);
-			recipe.AddIngredient(mod.GetItem("WetEssence"), 10);
-			recipe.AddIngredient(mod.GetItem("SpaceEssence"), 10);
-			recipe.AddIngredient(mod.GetItem("DarkEssence"), 10);
-			recipe.AddIngredient(mod.GetItem("LightEssence"), 10);
-			recipe.AddTile(TileID.WorkBenches);
-			recipe.SetResult(this);
-			recipe.AddRecipe();
-
-			// recipe #3
-			recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.LunarCraftingStation);
-			recipe.AddIngredient(ItemID.OrichalcumAnvil);
-			recipe.AddIngredient(ItemID.TitaniumForge);
-			recipe.AddIngredient(mod.GetItem("FlareEssence"), 10);
-			recipe.AddIngredient(mod.GetItem("WetEssence"), 10);
-			recipe.AddIngredient(mod.GetItem("SpaceEssence"), 10);
-			recipe.AddIngredient(mod.GetItem("DarkEssence"), 10);
-			recipe.AddIngredient(mod.GetItem("LightEssence"), 10);
-			recipe.AddTile(TileID.WorkBenches);
-			recipe.SetResult(this);
-			recipe.AddRecipe();
-
-			// recipe #4
-			recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.LunarCraftingStation);
-			recipe.AddIngredient(ItemID.OrichalcumAnvil);
-			recipe.AddIngredient(ItemID.AdamantiteForge);
-			recipe.AddIngredient(mod.GetItem("FlareEssence"), 10);
-			recipe.AddIngredient(mod.GetItem("WetEssence"), 10);
-			recipe.AddIngredient(mod.GetItem("SpaceEssence"), 10);
-			recipe.AddIngredient(mod.GetItem("DarkEssence"), 10);
-			recipe.AddIngredient(mod.GetItem("LightEssence"), 10);
+			recipe.AddIngredient(mod.ItemType("FlareEssence"), 10);
+			recipe.AddIngredient(mod.ItemType("WetEssence"), 10);
+			recipe.AddIngredient(mod.ItemType("SpaceEssence"), 10);
+			recipe.AddIngredient(mod.ItemType("DarkEssence"), 10);
+			recipe.AddIngredient(mod.ItemType("LightEssence"), 10);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

@@ -6,7 +6,7 @@ using static Terraria.ModLoader.ModContent;
 
 namespace t_test.Tiles
 {
-	public class KaiyoOre : ModTile
+	public class KaiyoOreTile : ModTile
 	{
 		public override void SetDefaults()
 		{
@@ -31,3 +31,4 @@ namespace t_test.Tiles
 			minPick = 210;
 		}
 	}
+}

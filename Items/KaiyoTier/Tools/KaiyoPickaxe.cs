@@ -35,7 +35,6 @@ namespace t_test.Items.KaiyoTier.Tools
 			recipe.AddIngredient(mod.GetItem("KaiyoBar"), 15);
 			recipe.AddIngredient(mod.ItemType("UmiEssence"), 5);
 			recipe.AddTile(TileID.MythrilAnvil);
-			recipe.AddTile(TileID.OrichalcumAnvil);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

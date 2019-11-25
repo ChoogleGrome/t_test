@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace t_test.Items.Shikyo_Tier.Ore 
+namespace t_test.Items.Shikyo_Tier.Ores
 {
     public class Shikyo_Ore : ModItem 
     {

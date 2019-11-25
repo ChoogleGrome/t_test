@@ -1,5 +1,8 @@
 ﻿using t_test.Tiles;
+using t_test.Items;
 using Terraria;
+using Terraria.ID;
+using Microsoft.Xna.Framework;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
@@ -46,10 +49,10 @@ namespace t_test.Items.KaiyoTier.Accessories
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(mod.GetItem("KaiyoBar"), 15);
-            recipe.AddIngredient(mod.GetItem("UmiEssence"), 10);
-            recipe.AddIngredient(ItemID.SoulOfFlight, 20);
-            recipe.AddTile(mod.GetTile("ForgeOfTheGods"));
+            recipe.AddIngredient(mod.ItemType("KaiyoBar"), 15);
+            recipe.AddIngredient(mod.ItemType("UmiEssence"), 10);
+            recipe.AddIngredient(ItemID.SoulofFlight, 20);
+            recipe.AddTile(mod.TileType("ForgeOfTheGods"));
             recipe.SetResult(this);
             recipe.AddRecipe();
         }

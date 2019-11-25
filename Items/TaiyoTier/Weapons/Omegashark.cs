@@ -39,6 +39,7 @@ namespace t_test.Items.TaiyoTier.Weapons
 			recipe.AddIngredient(mod.ItemType("KasaiEssence"), 10);
 			recipe.AddIngredient(ItemID.Megashark);
 			recipe.AddIngredient(ItemID.SDMG);
+			recipe.AddTile(mod.TileType("ForgeOfTheGods"));
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

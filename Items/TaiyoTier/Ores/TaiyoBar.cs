@@ -23,6 +23,7 @@ namespace t_test.Items.TaiyoTier.Ores
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.LunarBar, 1);
 			recipe.AddIngredient(mod.GetItem("KasaiEssence"), 2);
+			recipe.AddTile(mod.TileType("ForgeOfTheGods"));
 			recipe.SetResult(this, 1);
 			recipe.AddRecipe();
 

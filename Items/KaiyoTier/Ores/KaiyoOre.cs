@@ -18,3 +18,5 @@ namespace t_test.Items.KaiyoTier.Ores
 			item.value = 100;
 			item.rare = 2;
 		}
+	}
+}
