@@ -1,3 +1,5 @@
+// note this is very broken
+
 using Terraria;
 using t_test.Items;
 using Terraria.ID;
@@ -24,28 +26,28 @@ namespace t_test.NPCs {
 
             if (Main.hardMode) {
                 
-                if (Main.player[Main.myPlayer].mod.PlayerType("t_testPlayer").ZoneUnderworld) {
+                if (Main.player[Player.FindClosest(npc.position, npc.width, npc.height)].ZoneUnderworld) {
                     if (Main.rand.Next(4) == 0) {
 
                     Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("KasaiEssence"), 1);
                     }
                 }
 
-                if (Main.player[Main.myPlayer].mod.PlayerType("t_testPlayer").ZoneOcean) {
+                if (Main.player[Player.FindClosest(npc.position, npc.width, npc.height)].ZoneOcean) {
                     if (Main.rand.Next(4) == 0) {
 
                     Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("UmiEssence"), 1);
                     }
                 }
 
-                if (Main.player[Main.myPlayer].mod.PlayerType("t_testPlayer").ZoneUndergroundHallow) {
+                if (Main.player[Player.FindClosest(npc.position, npc.width, npc.height)].ZoneUndergroundHallow) {
                     if (Main.rand.Next(4) == 0) {
 
                     Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("HikariEssence"), 1);
                     }
                 }
 
-                if (Main.player[Main.myPlayer].mod.PlayerType("t_testPlayer").ZoneUndergroundCorruption) {
+                if (Main.player[Player.FindClosest(npc.position, npc.width, npc.height)].ZoneUndergroundCorruption) {
                     if (Main.rand.Next(4) == 0) {
 
                     Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DakiEssence"), 1);
