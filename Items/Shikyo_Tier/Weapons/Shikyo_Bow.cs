@@ -8,7 +8,7 @@ namespace t_test.Items.Shikyo_Tier.Weapons
 	{
 		public override void SetStaticDefaults() {
 			Tooltip.SetDefault("Bow of death");
-            DisplayName.SetDefault("Shikyo Bow")
+            DisplayName.SetDefault("Shikyo Bow");
 		}
 
 		public override void SetDefaults() {
