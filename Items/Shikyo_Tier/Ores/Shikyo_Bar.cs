@@ -9,6 +9,7 @@ namespace t_test.Items.Shikyo_Tier.Ores
         public override void SetStaticDefaults() 
         {
             Tooltip.SetDefault("The bar of Death.");
+            DisplayName.SetDefault("Shikyo Bar");
         }
 
         public override void SetDefaults() 
