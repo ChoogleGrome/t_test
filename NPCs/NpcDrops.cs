@@ -26,28 +26,28 @@ namespace t_test.NPCs {
 
             if (Main.hardMode) {
                 
-                if (Main.player[Player.FindClosest(npc.position, npc.width, npc.height)].ZoneUnderworld) {
+                if (Main.player[Player.FindClosest(npc.position, npc.width, npc.height)].ZoneUnderworldHeight) {
                     if (Main.rand.Next(4) == 0) {
 
                     Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("KasaiEssence"), 1);
                     }
                 }
 
-                if (Main.player[Player.FindClosest(npc.position, npc.width, npc.height)].ZoneOcean) {
+                if (Main.player[Player.FindClosest(npc.position, npc.width, npc.height)].ZoneBeach) {
                     if (Main.rand.Next(4) == 0) {
 
                     Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("UmiEssence"), 1);
                     }
                 }
 
-                if (Main.player[Player.FindClosest(npc.position, npc.width, npc.height)].ZoneUndergroundHallow) {
+                if (Main.player[Player.FindClosest(npc.position, npc.width, npc.height)].ZoneHoly) {
                     if (Main.rand.Next(4) == 0) {
 
                     Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("HikariEssence"), 1);
                     }
                 }
 
-                if (Main.player[Player.FindClosest(npc.position, npc.width, npc.height)].ZoneUndergroundCorruption) {
+                if (Main.player[Player.FindClosest(npc.position, npc.width, npc.height)].ZoneCorrupt) {
                     if (Main.rand.Next(4) == 0) {
 
                     Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DakiEssence"), 1);

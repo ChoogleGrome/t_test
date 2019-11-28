@@ -1,3 +1,0 @@
-author = reaprr
-version = 0.1
-displayName = Messorem
