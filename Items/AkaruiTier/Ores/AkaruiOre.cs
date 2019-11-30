@@ -3,9 +3,9 @@ using Microsoft.Xna.Framework;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace t_test.Items.AkuraiTier.Ores
+namespace t_test.Items.AkaruiTier.Ores
 {
-	public class AkuraiOre : ModItem
+	public class AkaruiOre : ModItem
 	{
 		public override void SetStaticDefaults() {
 			Tooltip.SetDefault("Yea, it's bright");

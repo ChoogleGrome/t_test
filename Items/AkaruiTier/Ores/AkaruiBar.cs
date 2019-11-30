@@ -3,9 +3,9 @@ using Microsoft.Xna.Framework;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace t_test.Items.AkuraiTier.Ores
+namespace t_test.Items.AkaruiTier.Ores
 {
-	public class AkuraiBar : ModItem
+	public class AkaruiBar : ModItem
 	{
 		public override void SetStaticDefaults() {
 			Tooltip.SetDefault("The bar of light");
@@ -23,7 +23,7 @@ namespace t_test.Items.AkuraiTier.Ores
 			// recipe #1
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(mod.GetItem("HikariEssence"), 1);
-			recipe.AddIngredient(mod.GetItem("AkuraiOre"), 4);
+			recipe.AddIngredient(mod.GetItem("AkaruiOre"), 4);
 			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this, 1);
 			recipe.AddRecipe();
