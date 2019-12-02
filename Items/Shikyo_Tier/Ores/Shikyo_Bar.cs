@@ -16,7 +16,6 @@ namespace t_test.Items.Shikyo_Tier.Ores
         {
             item.width = 20;
             item.height = 50;
-
             item.maxStack = 999;
             item.value = 200;
             item.rare = 11;

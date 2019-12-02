@@ -1,6 +1,5 @@
 using Terraria.ID;
 using Terraria.ModLoader;
-using static Terraria.ModLoader.ModContent;
 
 namespace t_test.Items.Shikyo_Tier.Weapons
 {
@@ -8,14 +7,14 @@ namespace t_test.Items.Shikyo_Tier.Weapons
 	{
 		public override void SetStaticDefaults() {
 			Tooltip.SetDefault("Bow of death");
-            DisplayName.SetDefault("Shikyo Bow")
+            DisplayName.SetDefault("Shikyo Bow");
 		}
 
 		public override void SetDefaults() {
-            item.damage = 200;
+            item.damage = 20000;
 			item.ranged = true;
-			item.width = 40;
-			item.height = 20;
+			item.width = 20;
+			item.height = 40;
 			item.useTime = 3;
 			item.useAnimation = 20;
 			item.useStyle = 5;
