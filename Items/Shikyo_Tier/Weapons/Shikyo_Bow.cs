@@ -14,21 +14,21 @@ namespace t_test.Items.Shikyo_Tier.Weapons
 		}
 
 		public override void SetDefaults() {
-            item.damage = 20000;
+            item.damage = 200000;
 			item.ranged = true;
 			item.width = 20;
 			item.height = 40;
-			item.useTime = 5;
+			item.useTime = 11;
 			item.useAnimation = 20;
 			item.useStyle = 5;
 			item.noMelee = true; //so the item's animation doesn't do damage
 			item.knockBack = 2;
-			item.value = 10000;
+			item.value = Item.sellPrice(1, 20, 0, 0);
 			item.rare = 11;
 			item.UseSound = SoundID.Item11;
 			item.autoReuse = true;
 			item.shoot = 10; //idk why but all the guns in the vanilla source have this
-            item.shootSpeed = 17f;
+            item.shootSpeed = 16.5f;
 			item.useAmmo = AmmoID.Arrow;
 		}
 
@@ -45,6 +45,15 @@ namespace t_test.Items.Shikyo_Tier.Weapons
             if (type == ProjectileID.WoodenArrowFriendly)
             {
                 type = ProjectileType<Projectiles.Shikyo_Bow_Proj>();
+            }
+
+            int numberProjectiles = 5;
+
+            for (int i = 0; i < numberProjectiles; i++)
+            {
+                position.Y = position.Y + (10 * i);
+                Vector2 shootTo = new Vector2((Main.MouseWorld.X - position.X), (Main.MouseWorld.Y - position.Y));
+                Projectile.NewProjectile(position.X, position.Y, shootTo.X, shootTo.Y, type, damage, knockBack, player.whoAmI);
             }
 
             return true;
