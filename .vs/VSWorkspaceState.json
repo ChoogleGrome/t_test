@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\NPCs"
+    "\\Items",
+    "\\Items\\Shikyo_Tier",
+    "\\Items\\Shikyo_Tier\\Weapons"
   ],
-  "SelectedNode": "\\NPCs\\NpcDrops.cs",
+  "SelectedNode": "\\Items\\Shikyo_Tier\\Weapons\\Shikyo_Bow.cs",
   "PreviewInSolutionExplorer": false
 }
