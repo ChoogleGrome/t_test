@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace t_test.Projectiles.Shikyo_Bow_Proj
+namespace t_test.Projectiles
 {
     public class Shikyo_Bow_Proj : ModProjectile
     {
